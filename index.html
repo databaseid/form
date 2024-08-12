@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ordering Document Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    header, footer {
+        background-color: lightcoral;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    button {
+        background-color: lightcoral;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #ff6666;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Abdalla Shideeye Online</h1>
+    <p>Add contacts for email and tel no</p>
+</header>
+<div class="container">
+    <h2>Ordering Document Form</h2>
+    <form action="process_form.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="mother_name">Mother Name:</label>
+        <input type="text" id="mother_name" name="mother_name" required>
+        
+        <label for="place_of_birth">Place of Birth:</label>
+        <input type="text" id="place_of_birth" name="place_of_birth" required>
+        
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required>
+        
+        <label for="contact_whatsapp">Contact Whatsapp:</label>
+        <input type="tel" id="contact_whatsapp" name="contact_whatsapp" required>
+        
+        <label for="contact_telegram">Contact Telegram:</label>
+        <input type="tel" id="contact_telegram" name="contact_telegram" required>
+        
+        <h3>Section Two</h3>
+        
+        <label for="school_university">School/University Name:</label>
+        <input type="text" id="school_university" name="school_university" required>
+        
+        <label for="faculty">Faculty:</label>
+        <input type="text" id="faculty" name="faculty" required>
+        
+        <label for="starting_date">Starting Date:</label>
+        <input type="date" id="starting_date" name="starting_date" required>
+        
+        <label for="graduation_date">Graduation Date:</label>
+        <input type="date" id="graduation_date" name="graduation_date" required>
+        
+        <label for="image">Upload Your Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+        
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment"></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<footer>
+    <p>&copy; 2024 Abdalla Shideeye Online</p>
+</footer>
+</body>
+</html>
